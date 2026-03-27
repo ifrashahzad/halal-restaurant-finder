@@ -1,0 +1,17 @@
+/* Import Leaflet CSS */
+@import 'leaflet/dist/leaflet.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fix Leaflet marker icons (Vite issue) */
+/* (Handled in main.jsx) */
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: #f0f7f2; }
+::-webkit-scrollbar-thumb { background: #2d8a57; border-radius: 2px; }
+
+/* Smooth transitions */
+* { transition: background-color 0.15s ease, border-color 0.15s ease; }
